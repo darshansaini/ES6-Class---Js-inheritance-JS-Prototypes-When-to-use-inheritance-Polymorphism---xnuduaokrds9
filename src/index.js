@@ -4,7 +4,7 @@ class API {
         this.url = url;
         this.method = method;
 
-        let secure;
+        var secure;
         if (this.url.startsWith('https')) {
             secure = true;
         } else {
