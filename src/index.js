@@ -3,16 +3,16 @@ class API {
   constructor(url, method = 'GET') {
     this.url = url;
     this.method = method;
-    #secure = url.startsWith("https") ? true : false;
+    obj.#secure = url.startsWith("https") ? true : false;
   }
 
   isSecure() {
-    return #secure;
+    return obj.#secure;
   }
 
   updateUrl(newUrl) {
     this.url = newUrl;
-    #secure = newUrl.startsWith("https") ? true : false;
+    obj.#secure = newUrl.startsWith("https") ? true : false;
   }
 }
 
